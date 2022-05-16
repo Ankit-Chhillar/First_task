@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Employee Records</h1>
+      <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" (click)="userNewData()">#</th>
+            <th scope="col" (click)="userNewData()">Name</th>
+            <th scope="col" (click)="userNewData()">Email</th>
+            <th scope="col" (click)="userNewData()">Contact</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let item of userData; let i = index">
+            <td>{{ i+1 }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.contact }}</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+  </div>
+</div>
