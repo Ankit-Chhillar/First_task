@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   }
 
   userNewData() {
-    // console.log("Sorted By Index");
+    console.log("Sorted By Index");
     let x = this.userData.sort((a: any,b: any)=> {
       return a.name > b.name;
     })
